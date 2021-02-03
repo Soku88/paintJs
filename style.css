@@ -1,0 +1,66 @@
+@import "reset.css";
+
+body {
+	background-color: #f6f9fc;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+	height: 100%;
+	width: 100%;
+}
+
+.canvas {
+	width: 500px;
+	height: 500px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.controlls {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.controlls .controlls__colors {
+	display: flex;
+}
+.controlls__colors .controlls__color {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+.controlls__colors .controlls__color:active {
+	transform: scale(0.9);
+}
+
+.controlls__btn {
+	margin-bottom: 10px;
+}
+
+.controlls__btn button {
+	all: unset;
+	cursor: pointer;
+	background-color: white;
+	padding: 5px 0;
+	width: 80px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 2px 2px 5px gray;
+	margin: 10px 5px;
+}
+
+.controlls__btn button:active {
+	transform: scale(0.95);
+}
+
+.controlls__range {
+	margin-bottom: 10px;
+}
